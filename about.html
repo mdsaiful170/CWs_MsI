@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CWs_MsI/About</title>
+
+    <link rel="shortcut icon" href="./img/web-icon.png" />
+    <!-- link fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- link remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+
+    <!-- swiper js link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- owl carousel css  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+    <!-- link tailwindcss -->
+    <link rel="stylesheet" href="./src/tailwind.css" />
+</head>
+
+<body>
+    <!-- loaders box start-->
+    <div class="flex loader-box items-center justify-center fixed top-0 left-0 right-0 bottom-0 z-[1400] bg-black">
+        <l-hatch size="40" stroke="4" speed="3.5" color="white"></l-hatch>
+    </div>
+    <!-- loaders box end-->
+
+    <!-- bottm header section start-->
+    <header class="fixed bottom-0 z-[600] left-0 right-0 block md:hidden bg-gray-200 dark:bg-darkBg">
+        <nav class="container mx-auto px-3 py-2">
+            <ul class="flex items-center justify-center gap-12">
+                <a href="index.html" title="Home" class="text-center *:text-textlighColor *:active:text-mainColor">
+                    <i class="ri-home-8-line text-2xl"></i>
+                    <span class="text-xs block">Home</span>
+                </a>
+
+                <a href="about.html" title="About" class="text-center *:text-textlighColor *:active:text-mainColor">
+                    <i class="ri-folder-info-line text-2xl active-page"></i>
+                    <span class="text-xs block active-page">About</span>
+                </a>
+
+                <a href="service.html" title="Service" class="text-center *:text-textlighColor *:active:text-mainColor">
+                    <i class="ri-service-fill text-2xl"></i>
+                    <span class="text-xs block">Service</span>
+                </a>
+
+                <a href="blog.html" title="Blog" class="text-center *:text-textlighColor *:active:text-mainColor">
+                    <i class="ri-news-line block text-2xl"></i>
+                    <span class="text-xs block">Blog</span>
+                </a>
+
+                <a href="contact.html" title="Contact" class="text-center *:text-textlighColor *:active:text-mainColor">
+                    <i class="ri-contacts-book-line text-2xl"></i>
+                    <span class="text-xs block">contact</span>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!-- bottm header section end  -->
+
+    <!-- header section start-->
+    <header class="header bg-stone-100 dark:bg-darkBg">
+        <!-- header 1 -->
+        <div class="header-1 container mx-auto flex items-start px-3 py-3 md:py-5">
+            <div class="me-auto flex items-start lg:items-center flex-wrap gap-1 gap-x-3 md:gap-5 lg:gap-9 max-w-4xl">
+                <div class="flex items-start gap-1 lg:gap-2">
+                    <span class="fas -mt-1 lg:-mt-0 fa-clock text-base lg:text-lg text-textlighColor"></span>
+                    <span class="text-textlighColor text-xs lg:text-base text-nowrap">Monday - Friday 9 AM - 5 PM</span>
+                </div>
+
+                <div class="flex items-center gap-1 lg:gap-2">
+                    <span class="fas fa-location-dot text-base lg:text-lg text-textlighColor"></span>
+                    <span class="text-textlighColor text-xs lg:text-base">2491 Daffodil Lane, LA</span>
+                </div>
+
+                <div class="flex items-center gap-1 lg:gap-2">
+                    <span class="fas fa-phone text-base lg:text-lg text-textlighColor"></span>
+                    <span class="text-textlighColor text-xs lg:text-base">++88014582224</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-1 md:gap-2">
+                <span
+                    class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor">Dr</span>
+                <span
+                    class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor">Be</span>
+                <span
+                    class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor">Li</span>
+                <span
+                    class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor">Ig</span>
+                <span
+                    class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor">Fb</span>
+            </div>
+        </div>
+
+        <!-- active header -2 -->
+        <div class="header-2 bg-gray-200 dark:bg-gray-800 dark:backdrop-blur-3xl">
+            <div class="flex items-center lg:container justify-between mx-auto px-3 py-3">
+                <a href="#home">
+                    <img src="./img/logo.png" class="w-[80%] md:max-w-[90%] lg:w-full" alt="" />
+                </a>
+
+                <nav class="hidden md:block" style="z-index: 700">
+                    <ul class="flex flex-row gap-5 lg:gap-10">
+                        <li class="block lg:inline-block">
+                            <a href="home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="block lg:inline-block">
+                            <a href="about.html" class="nav-link active">About</a>
+                        </li>
+                        <li class="block lg:inline-block">
+                            <a href="service.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="block lg:inline-block">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="block lg:inline-block">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="flex items-center gap-5 lg:gap-8">
+                    <button
+                        class="px-4 py-2 md:px-5 inline-block md:py-2 lg:px-7 lg:py-3 text-xs md:text-xs text-nowrap font-normal text-white bg-mainColor rounded-full active:bg-blueColor">
+                        Getting Started
+                    </button>
+
+                    <div class="flex items-center gap-3 lg:gap-4 *:cursor-pointer">
+                        <div>
+                            <i class="ri-moon-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                                id="theme-btn"></i>
+                        </div>
+                        <div>
+                            <i class="ri-user-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                                id="user-btn"></i>
+                        </div>
+
+                        <div>
+                            <span><i class="ri-search-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                                    id="search-btn"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section edn -->
+
+    <!-- about hero section start -->
+    <section
+        class="2xl:container relative mx-auto px-3 contrast-125 dark:contrast-150 flex items-center justify-center min-h-[250px] md:min-h-[380px] bg-cover"
+        style="background-image: url(/img/service-blog-img-2.png)">
+        <div class="text-center backdrop-blur-[1px]">
+            <h2
+                class="heading-title lg:text-slate-800 dark:bg-gradient-to-r dark:bg-clip-text dark:text-transparent dark:from-slate-800 dark:to-darkBg">
+                Who Are We
+            </h2>
+        </div>
+    </section>
+    <!-- about hero section end -->
+
+    <!-- about mission section start -->
+    <section class="container mx-auto px-3 mt-20 lg:mt-28 relative">
+        <div
+            class="absolute w-[45%] h-[50%] rounded-full -bottom-20 left-0 blur-[190px] opacity-40 bg-gradient-to-r from-darkBg via-mainColor to-blueColor">
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 mx-auto items-start justify-center">
+            <div class="w-full lg:w-1/2 p-2">
+                <h2 class="heading-title-2 pb-4 lg:pb-5">Our Mission</h2>
+
+                <p class="font-normal text-base">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+
+                <div class="pt-6 lg:pt-10">
+                    <ul class="list-image-[url(/img/list-img.png)] list-inside space-y-4 lg:space-y-6">
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            Help business development
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            Good and efficient financial planning
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            Analyze a small potential into a big one
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            make the client satisfied and happy
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            plan a business strategy that is better than competitors
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2">
+                <img src="./img/service-blog-img-4.jpg"
+                    class="max-w-full border border-r-stone-200 min-h-[512px] dark:border-slate-800 rounded-xl dark:brightness-70 dark:contrast-125"
+                    alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- about mission  section end -->
+
+    <!-- about vision section start -->
+    <section class="container mx-auto px-3 mt-20 lg:mt-28 relative">
+        <div
+            class="absolute w-[45%] h-[50%] rounded-full bottom-20 right-0 blur-[190px] opacity-40 bg-gradient-to-r from-darkBg via-mainColor to-blueColor">
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 mx-auto items-start justify-center">
+            <div class="w-full lg:w-1/2">
+                <img src="./img/ab-vision-img.png"
+                    class="max-w-full border border-r-stone-200 dark:border-slate-800 rounded-xl dark:brightness-70 dark:contrast-125"
+                    alt="" />
+            </div>
+
+            <div class="w-full lg:w-1/2 p-2">
+                <h2 class="heading-title-2 pb-4 lg:pb-5">Our Vision</h2>
+
+                <p class="font-normal text-base">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+
+                <div class="pt-6 lg:pt-10">
+                    <ul class="list-image-[url(/img/list-img.png)] list-inside space-y-4 lg:space-y-6">
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            Help business development
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            Good and efficient financial planning
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            Analyze a small potential into a big one
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            make the client satisfied and happy
+                        </li>
+                        <li class="text-textbolColor text-base ps-2 align-middle dark:text-stone-100">
+                            plan a business strategy that is better than competitors
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about vision  section end -->
+
+    <!-- about grow your business  sectlion start-->
+    <section class="container mt-20 lg:mt-28 mx-auto px-3 relative">
+        <div
+            class="absolute w-[45%] h-[50%] rounded-full -top-20 left-0 blur-[190px] opacity-25 bg-gradient-to-r from-darkBg via-mainColor to-blueColor">
+        </div>
+        <div>
+            <h2 class="heading-title-2 max-w-[712px] pb-5 lg:pb-6">
+                We are the best service business to grow your business
+            </h2>
+            <div class="flex flex-col lg:flex-row items-start gap-10 lg:gap-20">
+                <div class="w-full md:w-1/2">
+                    <p class="text-base">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-base">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <a href="contact.html" class="my-btn-outline">Contact us</a>
+            <img src="./img/ab-big-img.png" class="pt-8 lg:pt-10 block w-full mx-auto h-full object-cover" alt="" />
+        </div>
+    </section>
+    <!-- about grow your business  sectlion end-->
+
+    <!-- about Herman Defoe section start -->
+    <section class="container mx-auto px-3 mt-20 lg:mt-28 relative">
+        <div
+            class="absolute w-[45%] h-[50%] rounded-full bottom-20 right-0 blur-[190px] opacity-40 bg-gradient-to-r from-darkBg via-mainColor to-blueColor">
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5 mx-auto items-start justify-center">
+            <div class="w-full lg:w-1/2">
+                <img src="./img/ab-her-img.png"
+                    class="max-w-full border border-r-stone-200 dark:border-slate-800 rounded-xl dark:brightness-70 dark:contrast-125"
+                    alt="" />
+            </div>
+
+            <div class="w-full lg:w-1/2 p-2">
+                <h2 class="heading-title-2 pb-4 lg:pb-5">Herman Defoe</h2>
+                <span class="text-2xl pb-5">CEO</span>
+                <p class="font-normal text-base">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+
+                <div class="pt-6 lg:pt-10">
+                    <div class="flex items-start gap-4 pb-6">
+                        <p class="text-sm">
+                            <i class="ri-mail-line text-lg"></i> brotho@email.com
+                        </p>
+                        <p class="text-sm">
+                            <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-5">
+                        <span
+                            class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Dr</span>
+                        <span
+                            class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Be</span>
+                        <span
+                            class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Li</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about Herman Defoe  section end -->
+
+    <!-- about team section start -->
+    <section class="container mx-auto mt-20 lg:mt-24">
+        <div class="px-3 relative m-2">
+            <div
+                class="absolute top-16 mx-auto left-0 -z-10 right-0 w-[100%] h-[50%] opacity-30 blur-[190px] bg-gradient-to-r from-darkBg to-blueColor">
+            </div>
+            <h2 class="text-5xl font-bold text-textbolColor pb-6 lg:pb-8">
+                Our Team
+            </h2>
+
+            <div class="owl-carousel team-owl">
+                <div
+                    class="border border-stone-300 overflow-hidden relative dark:border dark:border-slate-700 rounded-2xl dark:border-t-0">
+                    <img src="img/ab-sb-img-1.png"
+                        class="w-full object-center object-cover min-h-[256px] rounded-t-2xl mb-2" alt="" />
+                    <div class="p-5 lg:p-6">
+                        <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+                        <span class="text-2xl pb-4">CEO</span>
+                        <div class="flex items-start gap-4 pb-6">
+                            <p class="text-sm">
+                                <i class="ri-mail-line text-lg"></i> brotho@email.com
+                            </p>
+                            <p class="text-sm">
+                                <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Dr</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Be</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Li</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm">
+                    <img src="img/ab-sb-img-2.png"
+                        class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl" alt="" />
+                    <div class="p-5 lg:p-6">
+                        <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+                        <span class="text-2xl pb-4">CEO</span>
+                        <div class="flex items-start gap-4 pb-6">
+                            <p class="text-sm">
+                                <i class="ri-mail-line text-lg"></i> brotho@email.com
+                            </p>
+                            <p class="text-sm">
+                                <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Dr</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Be</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Li</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm">
+                    <img src="img/ab-sb-img-3.png"
+                        class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl" alt="" />
+                    <div class="p-5 lg:p-6">
+                        <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+                        <span class="text-2xl pb-4">CEO</span>
+                        <div class="flex items-start gap-4 pb-6">
+                            <p class="text-sm">
+                                <i class="ri-mail-line text-lg"></i> brotho@email.com
+                            </p>
+                            <p class="text-sm">
+                                <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Dr</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Be</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Li</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm">
+                    <img src="img/about-mission-img.jpg"
+                        class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl" alt="" />
+                    <div class="p-5 lg:p-6">
+                        <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+                        <span class="text-2xl pb-4">CEO</span>
+                        <div class="flex items-start gap-4 pb-6">
+                            <p class="text-sm">
+                                <i class="ri-mail-line text-lg"></i> brotho@email.com
+                            </p>
+                            <p class="text-sm">
+                                <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Dr</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Be</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Li</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm">
+                    <img src="img/service-blog-img-1.jpg"
+                        class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl" alt="" />
+                    <div class="p-5 lg:p-6">
+                        <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+                        <span class="text-2xl pb-4">CEO</span>
+                        <div class="flex items-start gap-4 pb-6">
+                            <p class="text-sm">
+                                <i class="ri-mail-line text-lg"></i> brotho@email.com
+                            </p>
+                            <p class="text-sm">
+                                <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Dr</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Be</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Li</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm">
+                    <img src="img/service-blog-img-7.png"
+                        class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl" alt="" />
+                    <div class="p-5 lg:p-6">
+                        <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+                        <span class="text-2xl pb-4">CEO</span>
+                        <div class="flex items-start gap-4 pb-6">
+                            <p class="text-sm">
+                                <i class="ri-mail-line text-lg"></i> brotho@email.com
+                            </p>
+                            <p class="text-sm">
+                                <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Dr</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Be</span>
+                            <span
+                                class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs">Li</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about our team section end -->
+
+    <!-- about gallery Get to Know Us section start -->
+    <div class="container mx-auto mt-20 lg:mt-28 px-3">
+        <h2 class="heading-title-2 text-center pb-6 lg:pb-10">Get to Know Us</h2>
+        <div class="columns-2 md:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5 space-y-5">
+            <div>
+                <img src="./gallery-img/gallery-img-$ (1).jpg" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-$ (2).png" class="max-w-full aspect-video object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-$ (3).png" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+
+            <div>
+                <img src="./gallery-img/gallery-img-$ (4).png" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-$ (5).png" class="max-w-full aspect-video object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-$ (6).png" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+
+            <div>
+                <img src="./gallery-img/gallery-img-$ (7).png" class="max-w-full aspect-video object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-$ (8).png" class="max-w-full aspect-s object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-$ (9).png" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+
+            <div>
+                <img src="./gallery-img/gallery-img-$ (10).png" class="max-w-full aspect-video object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-$ (11).png" class="max-w-full aspect-video object-cover" alt="" />
+            </div>
+
+            <div>
+                <img src="./gallery-img/gallery-img-jpg (1).jpg" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-jpg (2).jpg" class="max-w-full aspect-video object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-jpg (3).jpg" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-jpg (4).jpg" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-jpg (5).jpg" class="max-w-full aspect-video object-cover" alt="" />
+            </div>
+            <div>
+                <img src="./gallery-img/gallery-img-jpg (6).jpg" class="max-w-full aspect-square object-cover" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- about gallery Get to Know Us section end -->
+
+    <!-- about experience send section start -->
+    <section class="container mx-auto mt-20 lg:mt-24 relative">
+        <div
+            class="absolute top-16 mx-auto left-0 -z-10 right-0 w-[50%] h-[50%] opacity-50 blur-[190px] bg-gradient-to-r from-darkBg via-mainColor to-blueColor">
+        </div>
+
+        <div
+            class="px-3 bg-[url(/img/container-box.png)] flex items-center justify-center bg-cover bg-center h-[287px]">
+            <div class="max-w-4xl text-center mx-auto">
+                <h2 class="heading-title max-w-[816px]">
+                    Try your experience working with us
+                </h2>
+
+                <a href="contact.html"
+                    class="text-base text-stone-100 bg-mainColor rounded-full px-7 lg:px-10 py-3 inline-block mt-7 lg:mt-10 active:bg-blueColor">
+                    Get in Touch
+                    <i class="ri-arrow-right-s-line text-3xl align-sub"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- about experience send section start -->
+
+    <!-- footer section start -->
+    <section class="container mt-24 lg:mt-28 mx-auto relative pb-3">
+        <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-start place-content-start gap-7 lg:gap-8 px-3">
+            <div class="col-span-2 md:col-span-2">
+                <a href="index.html">
+                    <img src="img/logo.png" class="max-w-full" alt="" />
+                </a>
+                <p class="text-base pt-6 dark:text-textlighColor">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    neque, mauris eu quis ultricies viverra dui venenatis. Eu odio sit
+                    tincidunt elementum a. Vulputate egestas sed gravida ut purus id
+                    tristique. Eu feugiat aliquam egestas convallis ultrices tellus.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold">Service</h2>
+                <ul>
+                    <li class="pt-6">
+                        <a href="#"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Financial
+                            Consulting</a>
+                    </li>
+                    <li class="pt-6">
+                        <a href="#"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Human
+                            Resource</a>
+                    </li>
+                    <li class="pt-6">
+                        <a href="#"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Business
+                            Plan</a>
+                    </li>
+                    <li class="pt-6">
+                        <a href="#"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Strategy
+                            Business</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold">Company</h2>
+                <ul>
+                    <li class="pt-6">
+                        <a href="about.html"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">About
+                            Us</a>
+                    </li>
+                    <li class="pt-6">
+                        <a href="service.html"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Our
+                            Services</a>
+                    </li>
+                    <li class="pt-6">
+                        <a href="contact.html"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-base font-bold">support</h2>
+                <ul>
+                    <li class="pt-6">
+                        <a href="#"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Privacy
+                            Policy</a>
+                    </li>
+                    <li class="pt-6">
+                        <a href="#"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Terms
+                            of Service</a>
+                    </li>
+                    <li class="pt-6">
+                        <a href="#"
+                            class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100">Code
+                            of Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- footer section end -->
+
+    <!-- creator section start -->
+    <section class="container mx-auto pt-12">
+        <div class="px-3 flex md:flex-row flex-col items-start md:items-center justify-between md:max-w-3xl">
+            <p class="text-base text-textlighColor">
+                @2024 Md Saiful Islam. All rights reserved.
+            </p>
+            <p class="flex items-center gap-5 text-base text-textlighColor">
+                <span>Privacy Policy</span> <span>Terms and Condition</span>
+            </p>
+        </div>
+    </section>
+    <!-- creator section start -->
+
+    <!-- jquery.main.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!-- main js linki -->
+    <script src="./js/main.js"></script>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- owlcrousel link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- counter up js waypoints link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- main counter up js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- loaders cdn link -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/hatch.js"></script>
+
+
+    <script>
+          fadeout();
+    function loader() {
+      document.querySelector(".loader-box").classList.add("hidden");
+    }
+    function fadeout() {
+      setTimeout(loader, 2500);
+    }
+
+    </script>
+</body>
+
+</html>

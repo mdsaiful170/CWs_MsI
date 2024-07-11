@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CWs_MsI</title>
+
+    <link rel="shortcut icon" href="./img/web-icon.png" />
+    <!-- link fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- link remixicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+
+    <!-- swiper js link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- owl carousel css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <!-- link tailwindcss -->
+    <link rel="stylesheet" href="./src/tailwind.css" />
+  </head>
+
+  <body>
+    <!-- loaders box start-->
+    <div
+      class="flex loader-box items-center justify-center fixed top-0 left-0 right-0 bottom-0 z-[1400] bg-black"
+    >
+      <l-hatch size="40" stroke="4" speed="3.5" color="white"></l-hatch>
+    </div>
+    <!-- loaders box end-->
+
+    <!-- bottm header section start-->
+    <header
+      class="fixed bottom-0 z-[600] left-0 right-0 block md:hidden bg-gray-200 dark:bg-darkBg"
+    >
+      <nav class="container mx-auto px-3 py-2">
+        <ul class="flex items-center justify-center gap-12">
+          <a
+            href="index.html"
+            title="Home"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-home-8-line text-2xl active-page"></i>
+            <span class="text-xs block active-page">Home</span>
+          </a>
+
+          <a
+            href="about.html"
+            title="About"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-folder-info-line text-2xl"></i>
+            <span class="text-xs block">About</span>
+          </a>
+
+          <a
+            href="service.html"
+            title="Service"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-service-fill text-2xl"></i>
+            <span class="text-xs block">Service</span>
+          </a>
+
+          <a
+            href="blog.html"
+            title="Blog"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-news-line block text-2xl"></i>
+            <span class="text-xs block">Blog</span>
+          </a>
+
+          <a
+            href="contact.html"
+            title="Contact"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-contacts-book-line text-2xl"></i>
+            <span class="text-xs block">contact</span>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <!-- bottm header section end  -->
+
+    <!-- header section start-->
+    <header class="header bg-stone-100 dark:bg-darkBg">
+      <!-- header 1 -->
+      <div
+        class="header-1 container mx-auto flex items-start px-3 py-3 md:py-5"
+      >
+        <div
+          class="me-auto flex items-start lg:items-center flex-wrap gap-1 gap-x-3 md:gap-5 lg:gap-9 max-w-4xl"
+        >
+          <div class="flex items-start gap-1 lg:gap-2">
+            <span
+              class="fas -mt-1 lg:-mt-0 fa-clock text-base lg:text-lg text-textlighColor"
+            ></span>
+            <span class="text-textlighColor text-xs lg:text-base text-nowrap"
+              >Monday - Friday 9 AM - 5 PM</span
+            >
+          </div>
+
+          <div class="flex items-center gap-1 lg:gap-2">
+            <span
+              class="fas fa-location-dot text-base lg:text-lg text-textlighColor"
+            ></span>
+            <span class="text-textlighColor text-xs lg:text-base"
+              >2491 Daffodil Lane, LA</span
+            >
+          </div>
+
+          <div class="flex items-center gap-1 lg:gap-2">
+            <span
+              class="fas fa-phone text-base lg:text-lg text-textlighColor"
+            ></span>
+            <span class="text-textlighColor text-xs lg:text-base"
+              >++88014582224</span
+            >
+          </div>
+        </div>
+
+        <div class="flex items-center gap-1 md:gap-2">
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Dr</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Be</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Li</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Ig</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Fb</span
+          >
+        </div>
+      </div>
+
+      <!-- active header -2 -->
+      <div class="header-2 bg-gray-200 dark:bg-gray-800 dark:backdrop-blur-3xl">
+        <div
+          class="flex items-center lg:container justify-between mx-auto px-3 py-3"
+        >
+          <a href="#home">
+            <img
+              src="./img/logo.png"
+              class="w-[80%] md:max-w-[90%] lg:w-full"
+              alt=""
+            />
+          </a>
+
+          <nav class="hidden md:block" style="z-index: 700">
+            <ul class="flex flex-row gap-5 lg:gap-10">
+              <li class="block lg:inline-block">
+                <a href="home.html" class="nav-link active">Home</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="service.html" class="nav-link">Services</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="contact.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center gap-5 lg:gap-8">
+            <button
+              class="px-4 py-2 md:px-5 inline-block md:py-2 lg:px-7 lg:py-3 text-xs md:text-xs text-nowrap font-normal text-white bg-mainColor rounded-full active:bg-blueColor"
+            >
+              Getting Started
+            </button>
+
+            <div class="flex items-center gap-3 lg:gap-4 *:cursor-pointer">
+              <div>
+                <i
+                  class="ri-moon-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                  id="theme-btn"
+                ></i>
+              </div>
+              <div>
+                <i
+                  class="ri-user-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                  id="user-btn"
+                ></i>
+              </div>
+
+              <div>
+                <span
+                  ><i
+                    class="ri-search-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                    id="search-btn"
+                  ></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section edn -->
+
+    <!-- hero section start -->
+    <section class="mt-2 lg:pt-9 container mx-auto relative hero">
+      <div
+        class="absolute -top-10 -left-20 w-[80%] h-[100%] -z-10 opacity-25 blur-[200px] bg-gradient-to-r from-darkBg via-mainColor to-blueColor rounded-full"
+      ></div>
+
+      <div
+        class="px-3 bg-[url(/img/hom-group.png)] min-h-[510px] wax-w-full bg-cover bg-center bg-no-repeat"
+      >
+        <div class="flex flex-col lg:flex-row items-center gap-5">
+          <div class="w-full lg:w-1/2 -mt-0 lg:-mt-12">
+            <h1 class="heading-title">
+              Start Empowering Your Business with Efficient Increments
+            </h1>
+            <p class="text-base pt-4 lg:pt-6 max-w-[604px]">
+              We help you to grow your business and offer some of the best
+              services provided so that your business can grow in the future
+            </p>
+            <button class="my-btn mt-6 lg:mt-10">Getting started</button>
+          </div>
+          <div
+            class="w-full lg:w-1/2 flex items-center justify-center px-4 md:px-12 py-12"
+          >
+            <div class="relative">
+              <img
+                src="./img/home-testimonial.png"
+                class="lg:w-auto w-full relative"
+                alt=""
+              />
+
+              <div
+                class="absolute lg:-left-28 lg:bottom-10 -bottom-16 border border-stone-300 dark:border-slate-500 left-0 right-0 mx-auto bg-white pt-8 pl-8 w-[90%] lg:w-full pb-[32px] pe-5 rounded-2xl dark:bg-darkBg"
+              >
+                <p class="text-textlighColor text-sm blur-0">
+                  The Lorem Ipsum Company has been an integral part of our
+                  content marketing success.
+                </p>
+                <h3 class="text-lg font-semibold mt-6 blur-0">Mas Yhanto</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- We help more than 200+ clients to grow their business section start-->
+    <section class="client-grow container mx-auto pt-28">
+      <div class="px-3 mx-auto relative">
+        <!-- first box -->
+        <div class="flex flex-col lg:flex-row gap-4 items-start justify-center">
+          <div class="w-full lg:w-1/2">
+            <h1 class="heading-title-2">
+              We help more than 200+ clients to grow their business
+            </h1>
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <p class="pb-6 text-base text-pretty">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <button class="my-btn-outline">Learn More</button>
+          </div>
+        </div>
+
+        <!-- second box -->
+        <div
+          class="pt-10 relative grid grid-cols-[repeat(auto-fit,minmax(296px,1fr))] place-items-start gap-4 mx-auto"
+        >
+          <div
+            class="absolute -bottom-10 -right-20 w-[80%] h-[100%] -z-10 opacity-20 blur-[190px] bg-gradient-to-r from-darkBg via-mainColor to-blueColor rounded-full"
+          ></div>
+
+          <div class="p-6">
+            <i class="ri-computer-line text-mainColor text-4xl"></i>
+            <div class="pt-6">
+              <h2 class="text-2xl font-bold pb-[8px]">Financial Consulting</h2>
+              <p class="text-lg font-normal">
+                Lorem Ipsum is simply dummy text of the printing and type
+                setting industry.
+              </p>
+              <a
+                href="#"
+                class="font-semibold *:text-mainColor flex items-center pt-8 *:hover:text-darkBg *:dark:hover:text-stone-100"
+              >
+                <span class="text-base group-hover:text-darkBg"
+                  >Learn more
+                </span>
+                <i
+                  class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <i class="ri-computer-line text-[#FF8345] text-4xl"></i>
+            <div class="pt-6">
+              <h2 class="text-2xl font-bold pb-[8px]">Financial Consulting</h2>
+              <p class="text-lg font-normal">
+                Lorem Ipsum is simply dummy text of the printing and type
+                setting industry.
+              </p>
+              <a
+                href="#"
+                class="font-semibold *:text-mainColor flex items-center pt-8 *:hover:text-darkBg *:dark:hover:text-stone-100"
+              >
+                <span class="text-base group-hover:text-darkBg"
+                  >Learn more
+                </span>
+                <i
+                  class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <i class="ri-computer-line text-[#FFCA45] text-4xl"></i>
+            <div class="pt-6">
+              <h2 class="text-2xl font-bold pb-[8px]">Financial Consulting</h2>
+              <p class="text-lg font-normal">
+                Lorem Ipsum is simply dummy text of the printing and type
+                setting industry.
+              </p>
+              <a
+                href="#"
+                class="font-semibold *:text-mainColor flex items-center pt-8 *:hover:text-darkBg *:dark:hover:text-stone-100"
+              >
+                <span class="text-base group-hover:text-darkBg"
+                  >Learn more
+                </span>
+                <i
+                  class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <i class="ri-computer-line text-blueColor text-4xl"></i>
+            <div class="pt-6">
+              <h2 class="text-2xl font-bold pb-[8px]">Financial Consulting</h2>
+              <p class="text-lg font-normal">
+                Lorem Ipsum is simply dummy text of the printing and type
+                setting industry.
+              </p>
+              <a
+                href="#"
+                class="font-semibold *:text-mainColor flex items-center pt-8 *:hover:text-darkBg *:dark:hover:text-stone-100"
+              >
+                <span class="text-base group-hover:text-darkBg"
+                  >Learn more
+                </span>
+                <i
+                  class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- We help more than 200+ clients to grow their business section end -->
+
+    <!-- Build a Business Foundation for Good Initial Planning section start -->
+    <section class="container mx-auto mt-20 lg:pt-24 relative">
+      <div
+        class="absolute bottom-20 left-32 w-[60%] h-[70%] -z-10 opacity-20 blur-[190px] bg-gradient-to-r from-darkBg via-mainColor to-blueColor rounded-full"
+      ></div>
+      <div class="px-3">
+        <div class="w-full pb-10">
+          <h1 class="heading-title-2 w-full lg:max-w-3xl">
+            Build a Business Foundation for Good Initial Planning
+          </h1>
+        </div>
+
+        <div
+          class="flex flex-col items-start justify-center lg:flex-row gap-14 lg:gap-24 mx-auto"
+        >
+          <div class="w-full lg:w-2/5">
+            <img
+              src="img/planing-img-1.png"
+              class="w-full object-cover object-center"
+              alt=""
+            />
+            <p class="text-pretty pt-6 lg:pt-9 text-base">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+
+            <a href="#" class="my-btn-outline mt-6 lg:mt-10"> Learn More </a>
+          </div>
+
+          <div class="w-full lg:w-3/5">
+            <p class="text-base pb-10">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <img
+              src="img/planing-img-2.png"
+              class="w-full object-cover object-center"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Build a Business Foundation for Good Initial Planning section end-->
+
+    <!-- our client text-logo section start -->
+    <section
+      class="mt-20 lg:mt-24 container bg-[url(/img/Clients.png)] bg-center bg-cover bg-fixed mx-auto"
+    >
+      <div class="lg:px-24 px-3 pt-8 lg:pt-10 pb-6 lg:pb-20 container mx-auto">
+        <h2
+          class="heading-title-2 text-stone-100 pb-6 lg:pb-10 dark:text-slate-100"
+        >
+          Our Clients
+        </h2>
+
+        <div
+          class="grid grid-cols-[repeat(auto-fit,minmax(161px,1fr))] gap-3 lg:gap-5 place-items-start place-content-center"
+        >
+          <div
+            class="bg-[#FF8345]/15 backdrop-blur-lg rounded px-3 py-8 w-full"
+          >
+            <span class="text-stone-100 font-bold text-2xl">TEXT 🏙 LOGO</span>
+          </div>
+          <div
+            class="bg-[#FFCA45]/15 backdrop-blur-lg rounded px-3 py-8 w-full"
+          >
+            <span class="text-stone-100 font-bold text-2xl">TEXT 🏙 LOGO</span>
+          </div>
+          <div
+            class="bg-mainColor/15 backdrop-blur-lg rounded px-3 py-8 w-full"
+          >
+            <span class="text-stone-100 font-bold text-2xl">TEXT 🏙 LOGO</span>
+          </div>
+          <div
+            class="bg-blueColor/15 backdrop-blur-lg rounded px-3 py-8 w-full"
+          >
+            <span class="text-stone-100 font-bold text-2xl">TEXT 🏙 LOGO</span>
+          </div>
+          <div class="bg-darkBg/15 backdrop-blur-lg rounded px-3 py-8 w-full">
+            <span class="text-stone-100 font-bold text-2xl">TEXT 🏙 LOGO</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our client text-logo section end -->
+
+    <!-- our client reiveiw sectin start -->
+    <section class="container mx-auto mt-20 lg:mt-24">
+      <div class="px-3 mx-auto relative">
+        <div
+          class="absolute w-[40%] top-28 h-[50%] right-0 left-0 -z-10 mx-auto blur-[190px] opacity-50 bg-gradient-to-r from-darkBg via-mainColor to-blueColor"
+        ></div>
+
+        <h2 class="heading-title-2 pb-4 lg:pb-6">What Our Customer says</h2>
+        <p class="text-base pb-7 lg:pb-10 max-w-xl lg:max-w-[720px]">
+          I am very helped in making a website and business development that
+          makes the product that I have to have a quality for use by the user
+        </p>
+
+        <div class="owl-carousel client-owl relative mt-14 lg:mt-12">
+          <div class="flex flex-col md:flex-row items-start gap-3">
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-stone-400/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Mas Yanto
+                </h3>
+                <p class="text-xs font-normal mt-2">Kang Bakso</p>
+              </div>
+            </div>
+
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-blueColor/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Mas Yanto
+                </h3>
+                <p class="text-xs font-normal mt-2">Kang Bakso</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start gap-3">
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-stone-400/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Loard Handa
+                </h3>
+                <p class="text-xs font-normal mt-2">Meganda Koia</p>
+              </div>
+            </div>
+
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-blueColor/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Max Magenda
+                </h3>
+                <p class="text-xs font-normal mt-2">MadmAx boxci</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start gap-3">
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-stone-400/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Blue Birds
+                </h3>
+                <p class="text-xs font-normal mt-2">Jon The Done</p>
+              </div>
+            </div>
+
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-blueColor/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Canida colbo
+                </h3>
+                <p class="text-xs font-normal mt-2">Jon The Dooe</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start gap-3">
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-stone-400/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Monio Hamakil
+                </h3>
+                <p class="text-xs font-normal mt-2">Hexatron</p>
+              </div>
+            </div>
+
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-blueColor/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Mas Yanto
+                </h3>
+                <p class="text-xs font-normal mt-2">GalvaTron Bakso</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start gap-3">
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-stone-400/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Roki Loard
+                </h3>
+                <p class="text-xs font-normal mt-2">Megatron</p>
+              </div>
+            </div>
+
+            <div
+              class="w-full md:w-1/2 p-6 border border-stone-300 dark:border-slate-800 backdrop-blur-3xl bg-blueColor/10"
+            >
+              <p class="text-base w-full md:max-w-[560px]">
+                My busy schedule leaves little, if any, time for blogging and
+                social media. The Lorem Ipsum Company has been a huge part of
+                helping me grow my business through organic search and content
+                marketing
+              </p>
+
+              <div class="pl-16 pt-6">
+                <h3
+                  class="text-textbolColor font-semibold text-base lg:text-lg"
+                >
+                  Halt Smit
+                </h3>
+                <p class="text-xs font-normal mt-2">Alextra Tron</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our client review section end  -->
+
+    <!-- our team section start -->
+    <section class="container mx-auto mt-20 lg:mt-24">
+      <div class="px-3 relative m-2">
+        <div
+          class="absolute top-16 mx-auto left-0 -z-10 right-0 w-[100%] h-[50%] opacity-30 blur-[190px] bg-gradient-to-r from-darkBg to-blueColor"
+        ></div>
+        <h2 class="text-5xl font-bold text-textbolColor pb-6 lg:pb-8">
+          Our Team
+        </h2>
+
+        <div class="owl-carousel team-owl">
+          <div
+            class="border border-stone-300 overflow-hidden relative dark:border dark:border-slate-700 rounded-2xl dark:border-t-0"
+          >
+            <img
+              src="img/team-img-1.png"
+              class="w-full object-center object-cover min-h-[256px] rounded-t-2xl mb-2"
+              alt=""
+            />
+            <div class="p-5 lg:p-6">
+              <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+              <span class="text-2xl pb-4">CEO</span>
+              <div class="flex items-start gap-4 pb-6">
+                <p class="text-sm">
+                  <i class="ri-mail-line text-lg"></i> brotho@email.com
+                </p>
+                <p class="text-sm">
+                  <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                </p>
+              </div>
+              <div class="flex items-center gap-5">
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Dr</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Be</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Li</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm"
+          >
+            <img
+              src="img/team-img-2.png"
+              class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl"
+              alt=""
+            />
+            <div class="p-5 lg:p-6">
+              <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+              <span class="text-2xl pb-4">CEO</span>
+              <div class="flex items-start gap-4 pb-6">
+                <p class="text-sm">
+                  <i class="ri-mail-line text-lg"></i> brotho@email.com
+                </p>
+                <p class="text-sm">
+                  <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                </p>
+              </div>
+              <div class="flex items-center gap-5">
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Dr</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Be</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Li</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm"
+          >
+            <img
+              src="img/team-img-3.png"
+              class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl"
+              alt=""
+            />
+            <div class="p-5 lg:p-6">
+              <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+              <span class="text-2xl pb-4">CEO</span>
+              <div class="flex items-start gap-4 pb-6">
+                <p class="text-sm">
+                  <i class="ri-mail-line text-lg"></i> brotho@email.com
+                </p>
+                <p class="text-sm">
+                  <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                </p>
+              </div>
+              <div class="flex items-center gap-5">
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Dr</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Be</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Li</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm"
+          >
+            <img
+              src="img/team-img-4.png"
+              class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl"
+              alt=""
+            />
+            <div class="p-5 lg:p-6">
+              <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+              <span class="text-2xl pb-4">CEO</span>
+              <div class="flex items-start gap-4 pb-6">
+                <p class="text-sm">
+                  <i class="ri-mail-line text-lg"></i> brotho@email.com
+                </p>
+                <p class="text-sm">
+                  <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                </p>
+              </div>
+              <div class="flex items-center gap-5">
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Dr</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Be</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Li</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-stone-300 dark:border-slate-700 rounded-2xl dark:border-t-0 shadow-sm"
+          >
+            <img
+              src="img/team-img-5.png"
+              class="w-full object-center object-cover min-h-[256px] mb-2 rounded-t-2xl"
+              alt=""
+            />
+            <div class="p-5 lg:p-6">
+              <h2 class="font-bold text-4xl pb-2">Shoo Bro Tho</h2>
+              <span class="text-2xl pb-4">CEO</span>
+              <div class="flex items-start gap-4 pb-6">
+                <p class="text-sm">
+                  <i class="ri-mail-line text-lg"></i> brotho@email.com
+                </p>
+                <p class="text-sm">
+                  <i class="ri-phone-line text-lg"></i> (+1) 923 2341 22
+                </p>
+              </div>
+              <div class="flex items-center gap-5">
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Dr</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Be</span
+                >
+                <span
+                  class="w-9 h-9 leading-9 text-center rounded-full text-white bg-mainColor font-medium text-xs"
+                  >Li</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our team section end -->
+
+    <!-- eamil send section start -->
+    <section class="container mx-auto mt-20 lg:mt-24 relative">
+      <div
+        class="absolute top-16 mx-auto left-0 -z-10 right-0 w-[50%] h-[50%] opacity-50 blur-[190px] bg-gradient-to-r from-darkBg via-mainColor to-blueColor"
+      ></div>
+
+      <div
+        class="px-3 bg-[url(/img/container-box.png)] flex items-center justify-center bg-cover bg-center h-[287px]"
+      >
+        <div class="max-w-4xl text-center mx-auto">
+          <h2 class="heading-title">Let Us Send You Offering</h2>
+
+          <p class="text-sm lg:text-base py-6">
+            Let's talk with us and more explore how we doing our works.
+          </p>
+
+          <div
+            class="w-full rounded-full border border-stone-300 dark:border-slate-700 flex items-center justify-between relative overflow-hidden dark:bg-darkBg bg-stone-100"
+          >
+            <input
+              type="search"
+              placeholder="Your Email"
+              name="search"
+              class="w-full h-[4rem] rounded-l-full px-3 ps-5 outline-none text-xl text-textlighColor bg-transparent placeholder:text-sm"
+              id=""
+              required
+            />
+            <div class="p-2">
+              <a
+                href="#"
+                class="px-12 py-4 text-sm rounded-full bg-mainColor text-stone-200 inline-block active:bg-blueColor"
+                >Send</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- email send section start -->
+
+    <!-- footer section start -->
+    <section class="container mt-24 lg:mt-28 mx-auto relative pb-3">
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-start place-content-start gap-7 lg:gap-8 px-3"
+      >
+        <div class="col-span-2 md:col-span-2">
+          <a href="index.html">
+            <img src="img/logo.png" class="max-w-full" alt="" />
+          </a>
+          <p class="text-base pt-6 dark:text-textlighColor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            neque, mauris eu quis ultricies viverra dui venenatis. Eu odio sit
+            tincidunt elementum a. Vulputate egestas sed gravida ut purus id
+            tristique. Eu feugiat aliquam egestas convallis ultrices tellus.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold">Service</h2>
+          <ul>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Financial Consulting</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Human Resource</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Business Plan</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Strategy Business</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold">Company</h2>
+          <ul>
+            <li class="pt-6">
+              <a
+                href="about.html"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >About Us</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="service.html"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Our Services</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="contact.html"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold">support</h2>
+          <ul>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Terms of Service</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Code of Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- footer section end -->
+
+    <section class="container mx-auto pt-12">
+      <div
+        class="px-3 flex md:flex-row flex-col items-start md:items-center justify-between md:max-w-3xl"
+      >
+        <p class="text-base text-textlighColor">
+          @2024 Md Saiful Islam. All rights reserved.
+        </p>
+        <p class="flex items-center gap-5 text-base text-textlighColor">
+          <span>Privacy Policy</span> <span>Terms and Condition</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- jquery.main.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- main js linki -->
+    <script src="./js/main.js"></script>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- owlcrousel link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- loaders cdn link -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/hatch.js"
+    ></script>
+
+    <script>
+      fadeout();
+      function loader() {
+        document.querySelector(".loader-box").classList.add("hidden");
+      }
+      function fadeout() {
+        setTimeout(loader, 2500);
+      }
+
+      
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CWs_MsI/Blog</title>
+
+    <link rel="shortcut icon" href="./img/web-icon.png" />
+    <!-- link fontawesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- link remixicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+
+    <!-- swiper js link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- owl carousel css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <!-- link tailwindcss -->
+    <link rel="stylesheet" href="./src/tailwind.css" />
+  </head>
+
+  <body>
+    <!-- loaders box start-->
+    <div
+      class="flex loader-box items-center justify-center fixed top-0 left-0 right-0 bottom-0 z-[1400] bg-black"
+    >
+      <l-hatch size="40" stroke="4" speed="3.5" color="white"></l-hatch>
+    </div>
+    <!-- loaders box end-->
+
+    <!-- bottm header section start-->
+    <header
+      class="fixed bottom-0 z-[600] left-0 right-0 block md:hidden bg-gray-200 dark:bg-darkBg"
+    >
+      <nav class="container mx-auto px-3 py-2">
+        <ul class="flex items-center justify-center gap-12">
+          <a
+            href="index.html"
+            title="Home"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-home-8-line text-2xl"></i>
+            <span class="text-xs block">Home</span>
+          </a>
+
+          <a
+            href="about.html"
+            title="About"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-folder-info-line text-2xl"></i>
+            <span class="text-xs block">About</span>
+          </a>
+
+          <a
+            href="service.html"
+            title="Service"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-service-fill text-2xl"></i>
+            <span class="text-xs block">Service</span>
+          </a>
+
+          <a
+            href="blog.html"
+            title="Blog"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-news-line block text-2xl active-page"></i>
+            <span class="text-xs block active-page">Blog</span>
+          </a>
+
+          <a
+            href="contact.html"
+            title="Contact"
+            class="text-center *:text-textlighColor *:active:text-mainColor"
+          >
+            <i class="ri-contacts-book-line text-2xl"></i>
+            <span class="text-xs block">contact</span>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <!-- bottm header section end  -->
+
+    <!-- header section start-->
+    <header class="header bg-stone-100 dark:bg-darkBg">
+      <!-- header 1 -->
+      <div
+        class="header-1 container mx-auto flex items-start px-3 py-3 md:py-5"
+      >
+        <div
+          class="me-auto flex items-start lg:items-center flex-wrap gap-1 gap-x-3 md:gap-5 lg:gap-9 max-w-4xl"
+        >
+          <div class="flex items-start gap-1 lg:gap-2">
+            <span
+              class="fas -mt-1 lg:-mt-0 fa-clock text-base lg:text-lg text-textlighColor"
+            ></span>
+            <span class="text-textlighColor text-xs lg:text-base text-nowrap"
+              >Monday - Friday 9 AM - 5 PM</span
+            >
+          </div>
+
+          <div class="flex items-center gap-1 lg:gap-2">
+            <span
+              class="fas fa-location-dot text-base lg:text-lg text-textlighColor"
+            ></span>
+            <span class="text-textlighColor text-xs lg:text-base"
+              >2491 Daffodil Lane, LA</span
+            >
+          </div>
+
+          <div class="flex items-center gap-1 lg:gap-2">
+            <span
+              class="fas fa-phone text-base lg:text-lg text-textlighColor"
+            ></span>
+            <span class="text-textlighColor text-xs lg:text-base"
+              >++88014582224</span
+            >
+          </div>
+        </div>
+
+        <div class="flex items-center gap-1 md:gap-2">
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Dr</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Be</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Li</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Ig</span
+          >
+          <span
+            class="text-xs lg:text-sm flex items-center justify-center px-2 py-[6px] rounded-full text-white bg-mainColor"
+            >Fb</span
+          >
+        </div>
+      </div>
+
+      <!-- active header -2 -->
+      <div class="header-2 bg-gray-200 dark:bg-gray-800 dark:backdrop-blur-3xl">
+        <div
+          class="flex items-center lg:container justify-between mx-auto px-3 py-3"
+        >
+          <a href="#home">
+            <img
+              src="./img/logo.png"
+              class="w-[80%] md:max-w-[90%] lg:w-full"
+              alt=""
+            />
+          </a>
+
+          <nav class="hidden md:block" style="z-index: 700">
+            <ul class="flex flex-row gap-5 lg:gap-10">
+              <li class="block lg:inline-block">
+                <a href="home.html" class="nav-link">Home</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="service.html" class="nav-link">Services</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="blog.html" class="nav-link active">Blog</a>
+              </li>
+              <li class="block lg:inline-block">
+                <a href="contact.html" class="nav-link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center gap-5 lg:gap-8">
+            <button
+              class="px-4 py-2 md:px-5 inline-block md:py-2 lg:px-7 lg:py-3 text-xs md:text-xs text-nowrap font-normal text-white bg-mainColor rounded-full active:bg-blueColor"
+            >
+              Getting Started
+            </button>
+
+            <div class="flex items-center gap-3 lg:gap-4 *:cursor-pointer">
+              <div>
+                <i
+                  class="ri-moon-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                  id="theme-btn"
+                ></i>
+              </div>
+              <div>
+                <i
+                  class="ri-user-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                  id="user-btn"
+                ></i>
+              </div>
+
+              <div>
+                <span
+                  ><i
+                    class="ri-search-line text-lg lg:text-xl text-textlighColor hover:text-mainColor dark:hover:text-stone-100"
+                    id="search-btn"
+                  ></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section edn -->
+
+    <!-- blog hero section start -->
+    <section
+      class="2xl:container relative mx-auto px-3 bg-[url(/img/service-home-img.png)] brightness-95 flex items-center justify-center min-h-[250px] md:min-h-[328px] bg-center bg-ceover"
+    >
+      <div class="text-center backdrop-blur-[1px]">
+        <h2
+          class="heading-title text-slate-800 dark:bg-gradient-to-r dark:bg-clip-text dark:text-transparent dark:from-slate-800 dark:to-darkBg"
+        >
+          Read the latest News
+        </h2>
+      </div>
+    </section>
+    <!-- blog hero section end -->
+
+    <!-- blog topic box start -->
+    <section class="container mt-20 lg:mt-28 mx-auto px-3 relative">
+      <div
+        class="absolute w-[70%] h-[80%] rounded-full -top-10 left-0 blur-[190px] opacity-20 bg-gradient-to-r from-darkBg via-mainColor to-blueColor"
+      ></div>
+      <div
+        class="flex flex-col container mx-auto lg:flex-row items-start justify-center gap-5"
+      >
+        <div
+          class="flex flex-col gap-0 md:flex-row w-full lg:w-1/2 rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="w-full lg:w-1/2 overflow-hidden relative">
+            <img
+              src="img/service-img_1.jpg"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <div class="p-5">
+              <h3 class="text-2xl font-bold">
+                Lorem ipsum dolor sit amet, con sec tetur adipiscing elit, sed.
+              </h3>
+              <p class="text-base pt-4">
+                Lorem ipsum dolor sit amet, con sec tetur adipiscing elit, sed
+                do eiusmod.
+              </p>
+
+              <a
+                href="#"
+                class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+              >
+                <span class="text-base">Learn more </span>
+                <i
+                  class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col gap-0 md:flex-row w-full lg:w-1/2 rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="w-full lg:w-1/2 overflow-hidden relative">
+            <img
+              src="img/service-img_2.jpg"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <div class="p-5">
+              <h3 class="text-2xl font-bold">
+                Lorem ipsum dolor sit amet, con sec tetur adipiscing elit, sed.
+              </h3>
+              <p class="text-base pt-4">
+                Lorem ipsum dolor sit amet, con sec tetur adipiscing elit, sed
+                do eiusmod.
+              </p>
+
+              <a
+                href="#"
+                class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+              >
+                <span class="text-base">Learn more </span>
+                <i
+                  class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog topic box end -->
+
+    <!-- blog gallery section start -->
+    <section class="mt-20 lg:mt-28 container mx-auto px-3 relative">
+      <div
+        class="absolute w-[100%] h-[50%] rounded-full top-0 bottom-0 right-0 left-0 mx-auto my-auto -z-10 blur-[190px] opacity-20 bg-gradient-to-r from-darkBg via-mainColor to-blueColor"
+      ></div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-start gap-5"
+      >
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-1.jpg"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-2.png"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-3.jpg"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-4.jpg"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-5.jpg"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-6.png"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-10.png"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rounded-xl border border-stone-300 dark:border-stone-700 overflow-hidden group cursor-pointer"
+        >
+          <div class="overflow-hidden relative">
+            <img
+              src="img/service-blog-img-18.jpg"
+              class="w-full bg-cover bg-center h-full duration-300 group-hover:scale-105 group-hover:grayscale"
+              alt=""
+            />
+            <span
+              class="absolute top-4 left-5 rounded-full px-[17px] py-1 text-sm text-stone-100 bg-mainColor"
+              >Design</span
+            >
+          </div>
+
+          <div class="p-5">
+            <h3 class="text-2xl font-bold">
+              Lorem Ipsum Dolor Sit Amet Consectur
+            </h3>
+            <p class="text-base pt-4">
+              Lorem ipsum dolor sit amet, con sectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+
+            <a
+              href="#"
+              class="font-semibold *:text-mainColor flex items-center pt-6 *:hover:text-darkBg *:dark:hover:text-stone-100"
+            >
+              <span class="text-base">Learn more </span>
+              <i
+                class="ri-arrow-right-s-line text-3xl font-extralight ps-[6px]"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="my-btn-outline block w-[170px] mx-auto mt-10"
+        >Load More</a
+      >
+    </section>
+    <!-- blog gallery section end -->
+
+    <!-- eamil send section start -->
+    <section class="container mx-auto mt-20 lg:mt-24 relative">
+      <div
+        class="absolute top-16 mx-auto left-0 -z-10 right-0 w-[50%] h-[50%] opacity-50 blur-[190px] bg-gradient-to-r from-darkBg via-mainColor to-blueColor"
+      ></div>
+
+      <div
+        class="px-3 bg-[url(/img/container-box.png)] flex items-center justify-center bg-cover bg-center h-[287px]"
+      >
+        <div class="max-w-4xl text-center mx-auto">
+          <h2 class="heading-title">Let Us Send You Offering</h2>
+
+          <p class="text-sm lg:text-base py-6">
+            Let's talk with us and more explore how we doing our works.
+          </p>
+
+          <div
+            class="w-full rounded-full border border-stone-300 dark:border-slate-700 flex items-center justify-between relative overflow-hidden dark:bg-darkBg bg-stone-100"
+          >
+            <input
+              type="search"
+              placeholder="Your Email"
+              name="search"
+              class="w-full h-[4rem] rounded-l-full px-3 ps-5 outline-none text-xl text-textlighColor bg-transparent placeholder:text-sm"
+              id=""
+              required
+            />
+            <div class="p-2">
+              <a
+                href="#"
+                class="px-12 py-4 text-sm rounded-full bg-mainColor text-stone-200 inline-block active:bg-blueColor"
+                >Send</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- email send section start -->
+
+    <!-- footer section start -->
+    <section class="container mt-24 lg:mt-28 mx-auto relative pb-3">
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-start place-content-start gap-7 lg:gap-8 px-3"
+      >
+        <div class="col-span-2 md:col-span-2">
+          <a href="index.html">
+            <img src="img/logo.png" class="max-w-full" alt="" />
+          </a>
+          <p class="text-base pt-6 dark:text-textlighColor">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            neque, mauris eu quis ultricies viverra dui venenatis. Eu odio sit
+            tincidunt elementum a. Vulputate egestas sed gravida ut purus id
+            tristique. Eu feugiat aliquam egestas convallis ultrices tellus.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold">Service</h2>
+          <ul>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Financial Consulting</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Human Resource</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Business Plan</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Strategy Business</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold">Company</h2>
+          <ul>
+            <li class="pt-6">
+              <a
+                href="about.html"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >About Us</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="service.html"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Our Services</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="contact.html"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-base font-bold">support</h2>
+          <ul>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Terms of Service</a
+              >
+            </li>
+            <li class="pt-6">
+              <a
+                href="#"
+                class="text-base hover:underline hover:text-darkBg dark:bg text-textlighColor dark:hover:text-stone-100"
+                >Code of Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- footer section end -->
+
+    <!-- creator section start -->
+    <section class="container mx-auto pt-12">
+      <div
+        class="px-3 flex md:flex-row flex-col items-start md:items-center justify-between md:max-w-3xl"
+      >
+        <p class="text-base text-textlighColor">
+          @2024 Md Saiful Islam. All rights reserved.
+        </p>
+        <p class="flex items-center gap-5 text-base text-textlighColor">
+          <span>Privacy Policy</span> <span>Terms and Condition</span>
+        </p>
+      </div>
+    </section>
+    <!-- creator section start -->
+
+    <!-- jquery.main.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- owlcrousel link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- counter up js waypoints link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- main counter up js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- main js linki -->
+    <script src="./js/main.js"></script>
+
+    <!-- loaders cdn link -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/hatch.js"
+    ></script>
+
+    <script>
+      fadeout();
+      function loader() {
+        document.querySelector(".loader-box").classList.add("hidden");
+      }
+      function fadeout() {
+        setTimeout(loader, 2500);
+      }
+    </script>
+  </body>
+</html>
