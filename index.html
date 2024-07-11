@@ -1096,10 +1096,6 @@
         setTimeout(loader, 2500);
       }
 
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
-      });
-
       const header = document.querySelector(".header .header-2, .home-bottom");
 
       const contentBox = document.querySelector(".hero");
@@ -1221,72 +1217,6 @@
           },
         });
       });
-      $(document).ready(function () {
-        $(".owl-process").owlCarousel({
-          loop: true,
-          margin: 15,
-          responsiveClass: true,
-          grabCursor: true,
-
-          navText: [
-            "<i class='fas fa-arrow-left-long'></i>",
-            "<i class='fas fa-arrow-right-long'></i>",
-          ],
-          autoplay: {
-            delay: 3000,
-            disableOninteraction: false,
-          },
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            768: {
-              items: 2,
-              nav: true,
-            },
-            1024: {
-              items: 3,
-              nav: true,
-            },
-            1400: {
-              items: 4,
-              nav: true,
-            },
-          },
-        });
-      });
-
-      // $(document).ready(function () {
-      //   $('.navtab-owl').owlCarousel({
-      //       loop: true,
-      //       margin: 10,
-      //       center:true,
-      //       autoplay: {
-      //           delay: 3000,
-      //           disableOninteraction: false
-      //       },
-      //       responsive: {
-      //           0: {
-      //               items: 3,
-      //               nav: true,
-      //           },
-      //           768: {
-      //               items: 3,
-      //               nav: false,
-      //           },
-      //           991: {
-      //               items: 4,
-      //               nav: false,
-      //           },
-      //           1000: {
-      //               items: 5,
-      //               nav: true,
-      //               loop: true,
-      //           }
-      //       }
-      //   })
-      // });
     </script>
   </body>
 </html>

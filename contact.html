@@ -236,6 +236,20 @@
     </header>
     <!-- header section edn -->
 
+    <!-- contact hero section start -->
+    <section
+      class="2xl:container relative mx-auto px-3 bg-[url(/img/ab-big-img.png)] contrast-125 dark:contrast-150 flex items-center justify-center min-h-[250px] md:min-h-[380px] bg-cover"
+    >
+      <div class="text-center backdrop-blur-[1px]">
+        <h2
+          class="heading-title text-slate-800 dark:bg-gradient-to-r dark:bg-clip-text dark:text-transparent dark:from-slate-800 dark:to-darkBg"
+        >
+          Who Are We
+        </h2>
+      </div>
+    </section>
+    <!-- contact hero section end -->
+
     <!-- contact from section start -->
     <section class="container mx-auto px-3 mt-20 lg:mt-28 relative">
       <div
@@ -1067,7 +1081,7 @@
     <!-- main js linki -->
     <script src="./js/main.js"></script>
 
-    <!-- loaders cdn link -->
+    <!-- loader cdns js link -->
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/hatch.js"
@@ -1142,135 +1156,6 @@
         html.classList.remove("dark");
         themeBtn.classList.replace("ri-sun-line", "ri-moon-line");
       }
-
-      $(document).ready(function () {
-        $(".client-owl").owlCarousel({
-          loop: true,
-          margin: 20,
-          // center:true,
-          grabCursor: true,
-          center: true,
-
-          // grabCursor: true,
-          autoplay: {
-            delay: 3000,
-            disableOninteraction: false,
-          },
-
-          navText: [
-            "<i class='fas fa-arrow-left-long'></i>",
-            "<i class='fas fa-arrow-right-long'></i>",
-          ],
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-          },
-        });
-      });
-
-      $(document).ready(function () {
-        $(".team-owl").owlCarousel({
-          loop: true,
-          margin: 20,
-          responsiveClass: true,
-          grabCursor: true,
-
-          navText: [
-            "<i class='fas fa-arrow-left-long'></i>",
-            "<i class='fas fa-arrow-right-long'></i>",
-          ],
-          autoplay: {
-            delay: 3000,
-            disableOninteraction: false,
-          },
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            768: {
-              items: 2,
-              nav: true,
-            },
-            1024: {
-              items: 3,
-              nav: true,
-            },
-            1400: {
-              items: 4,
-              nav: true,
-            },
-          },
-        });
-      });
-      $(document).ready(function () {
-        $(".owl-process").owlCarousel({
-          loop: true,
-          margin: 15,
-          responsiveClass: true,
-          grabCursor: true,
-
-          navText: [
-            "<i class='fas fa-arrow-left-long'></i>",
-            "<i class='fas fa-arrow-right-long'></i>",
-          ],
-          autoplay: {
-            delay: 3000,
-            disableOninteraction: false,
-          },
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            768: {
-              items: 2,
-              nav: true,
-            },
-            1024: {
-              items: 3,
-              nav: true,
-            },
-            1400: {
-              items: 4,
-              nav: true,
-            },
-          },
-        });
-      });
-
-      // $(document).ready(function () {
-      //   $('.navtab-owl').owlCarousel({
-      //       loop: true,
-      //       margin: 10,
-      //       center:true,
-      //       autoplay: {
-      //           delay: 3000,
-      //           disableOninteraction: false
-      //       },
-      //       responsive: {
-      //           0: {
-      //               items: 3,
-      //               nav: true,
-      //           },
-      //           768: {
-      //               items: 3,
-      //               nav: false,
-      //           },
-      //           991: {
-      //               items: 4,
-      //               nav: false,
-      //           },
-      //           1000: {
-      //               items: 5,
-      //               nav: true,
-      //               loop: true,
-      //           }
-      //       }
-      //   })
-      // });
     </script>
   </body>
 </html>

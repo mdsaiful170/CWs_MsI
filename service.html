@@ -234,7 +234,7 @@
 
     <!-- service hero section start -->
     <section
-      class="2xl:container relative mx-auto px-3 bg-[url(/img/about-home-img.png)] contrast-125 dark:contrast-150 flex items-center justify-center min-h-[250px] md:min-h-[328px] bg-center bg-ceover"
+      class="2xl:container relative mx-auto px-3 bg-[url(/img/ab-big-img.png)] contrast-125 dark:contrast-150 flex items-center justify-center min-h-[250px] md:min-h-[380px] bg-cover"
     >
       <div class="text-center backdrop-blur-[1px]">
         <h2
@@ -792,9 +792,6 @@
         time: 1500,
       });
 
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
-      });
       const header = document.querySelector(".header .header-2, .home-bottom");
 
       const contentBox = document.querySelector(".hero");
@@ -854,68 +851,6 @@
         themeBtn.classList.replace("ri-sun-line", "ri-moon-line");
       }
 
-      $(document).ready(function () {
-        $(".client-owl").owlCarousel({
-          loop: true,
-          margin: 20,
-          // center:true,
-          grabCursor: true,
-          center: true,
-
-          // grabCursor: true,
-          autoplay: {
-            delay: 3000,
-            disableOninteraction: false,
-          },
-
-          navText: [
-            "<i class='fas fa-arrow-left-long'></i>",
-            "<i class='fas fa-arrow-right-long'></i>",
-          ],
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-          },
-        });
-      });
-
-      $(document).ready(function () {
-        $(".team-owl").owlCarousel({
-          loop: true,
-          margin: 20,
-          responsiveClass: true,
-          grabCursor: true,
-
-          navText: [
-            "<i class='fas fa-arrow-left-long'></i>",
-            "<i class='fas fa-arrow-right-long'></i>",
-          ],
-          autoplay: {
-            delay: 3000,
-            disableOninteraction: false,
-          },
-          responsive: {
-            0: {
-              items: 1,
-              nav: true,
-            },
-            768: {
-              items: 2,
-              nav: true,
-            },
-            1024: {
-              items: 3,
-              nav: true,
-            },
-            1400: {
-              items: 4,
-              nav: true,
-            },
-          },
-        });
-      });
       $(document).ready(function () {
         $(".owl-process").owlCarousel({
           loop: true,
